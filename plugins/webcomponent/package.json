@@ -1,5 +1,5 @@
 {
-  "name": "@plugins/shadowdom",
+  "name": "@plugins/webcomponent",
   "main": "src/index.js",
   "version": "0.0.0",
   "private": true,

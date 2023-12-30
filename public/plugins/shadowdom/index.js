@@ -7,9 +7,7 @@ definePlugin('@plugins/shadowdom', (function () { 'use strict';
         if (container == null) {
           return;
         }
-        const div = document.createElement("div");
-        div.innerHTML = "shadowdom";
-        container.appendChild(div);
+        console.log(block);
       }
     };
 

@@ -10,7 +10,7 @@ const mockBlocksData = [
     type: "left",
     plugins: [
       { name: "button", url: "/plugins/button/index.js" },
-      { name: "shadowdom", url: "/plugins/shadowdom/index.js" },
+      { name: "webcomponent", url: "/plugins/webcomponent/index.js" },
     ],
   },
   {
