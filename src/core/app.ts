@@ -9,8 +9,8 @@ const mockBlocksData = [
     id: "@reduce-1",
     type: "left",
     plugins: [
-      { name: "button", url: "/plugins/button/index.js" },
       { name: "webcomponent", url: "/plugins/webcomponent/index.js" },
+      { name: "button", url: "/plugins/button/index.js" },
     ],
   },
   {

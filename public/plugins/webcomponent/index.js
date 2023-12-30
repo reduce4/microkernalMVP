@@ -22,6 +22,7 @@ definePlugin('@plugins/webcomponent', (function () { 'use strict';
       customElements.define(id.slice(1), WebComponent);
       const webComponent = document.createElement(id.slice(1));
       container == null ? void 0 : container.appendChild(webComponent);
+      return webComponent;
     }
     window.plugins.webcomponent = {
       onload(block) {
@@ -29,7 +30,7 @@ definePlugin('@plugins/webcomponent', (function () { 'use strict';
         if (container == null) {
           return;
         }
-        createWebComponent(block.id, container);
+        block.shadowDom = createWebComponent(block.id, container);
       }
     };
 

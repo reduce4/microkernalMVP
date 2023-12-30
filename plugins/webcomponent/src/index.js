@@ -14,6 +14,7 @@ function createWebComponent(id, container) {
     customElements.define(id.slice(1), WebComponent);
     const webComponent = document.createElement(id.slice(1));
     container?.appendChild(webComponent);
+    return webComponent;
 }
 
 
@@ -24,6 +25,6 @@ window.plugins.webcomponent = {
         if (container == null) {
             return;
         }
-        createWebComponent(block.id, container);
+        block.shadowDom = createWebComponent(block.id, container);
     }
 }
